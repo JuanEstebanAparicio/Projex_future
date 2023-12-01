@@ -146,7 +146,7 @@ public class Usuario extends javax.swing.JFrame {
 
         // Mostrar el resultado del inicio de sesión
         if (inicioSesionExitoso) {
-            new Registro().setVisible(true);
+            new MMenu_crud().setVisible(true);
         } else {
             JOptionPane.showMessageDialog(null, "Nombre de usuario o contraseña incorrectos.");
         }
@@ -168,7 +168,6 @@ public class Usuario extends javax.swing.JFrame {
                     }
                 }
             } catch (IOException e) {
-                e.printStackTrace();
                 JOptionPane.showMessageDialog(null, "Error al verificar la información de inicio de sesión.");
             }
 
